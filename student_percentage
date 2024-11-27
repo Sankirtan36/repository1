@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int mark1, mark2, mark3, total_marks;
+    float percentage;
+
+    // Loop for 5 students
+    for (int i = 1; i <= 5; i++) {
+        // Prompting user for marks input
+        printf("Enter marks for Student %d:\n", i);
+        printf("Subject 1: ");
+        scanf("%d", &mark1);
+        printf("Subject 2: ");
+        scanf("%d", &mark2);
+        printf("Subject 3: ");
+        scanf("%d", &mark3);
+
+        // Calculating total marks and percentage
+        total_marks = mark1 + mark2 + mark3;
+        percentage = (float)total_marks / 3;
+
+        // Displaying the results for each student
+        printf("Student %d - Total Marks: %d, Percentage: %.2f\n", i, total_marks, percentage);
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
